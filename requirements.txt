@@ -1,0 +1,222 @@
+# ================================================================
+# MindBridge AI - Python Dependencies
+# ================================================================
+# Each package is explained in detail below
+# Install all: pip install -r requirements.txt
+# ================================================================
+
+# ----------------------------------------------------------------
+# 🧠 CORE AI & LLM LIBRARIES
+# ----------------------------------------------------------------
+
+# LangChain - Framework for building LLM applications
+# Why: Provides abstractions for prompts, chains, and agents
+# What we use: Base classes for our agents
+langchain==0.3.13
+
+# LangChain NVIDIA AI Endpoints - Official NVIDIA connector
+# Why: Lets us call NVIDIA Nemotron models via OpenRouter
+# What we use: ChatNVIDIA class for our LLM calls
+# Note: Works with OpenRouter by setting base_url
+langchain-nvidia-ai-endpoints==0.3.9
+
+# LangGraph - Multi-agent orchestration framework
+# Why: **THE KEY TO AGENTIC BEHAVIOR**
+# What we use:
+#   - StateGraph: Define agent workflows
+#   - Command: Agent-to-agent handoffs
+#   - Nodes: Individual agents (Crisis, Habit, Resource)
+#   - Edges: Control flow between agents
+# This is what makes our system TRULY agentic vs a chatbot!
+langgraph==0.2.59
+
+# LangChain Community - Additional integrations
+# Why: Extra tools and utilities for LangChain
+# What we use: Additional tooling and integrations
+langchain-community==0.3.13
+
+# LangChain Core - Core abstractions
+# Why: Base classes for messages, prompts, outputs
+# What we use: Message types, base classes
+langchain-core==0.3.28
+
+# ----------------------------------------------------------------
+# 🔌 API CLIENTS
+# ----------------------------------------------------------------
+
+# OpenAI - OpenAI's official Python client
+# Why: OpenRouter uses OpenAI-compatible API format
+# What we use: Even though we use Nemotron, OpenRouter
+#              speaks the OpenAI protocol, so we need this
+openai==1.59.3
+
+# Tavily - AI-optimized search API
+# Why: Our Resource Matching Agent needs to find:
+#      - Therapist directories
+#      - Crisis hotlines
+#      - Support groups
+#      - Mental health resources
+# What we use: Search function with structured results
+tavily-python==0.5.0
+
+# ----------------------------------------------------------------
+# 🌐 WEB FRAMEWORK (For Demo & API)
+# ----------------------------------------------------------------
+
+# FastAPI - Modern, fast web framework
+# Why: Build REST API endpoints for our agents
+# What we use:
+#   - WebSocket support for real-time agent updates
+#   - API endpoints for triggering agents
+#   - CORS for frontend integration
+fastapi==0.115.6
+
+# Python Multipart - File upload support
+# Why: Handle file uploads in FastAPI
+# What we use: Therapist license upload endpoint
+python-multipart==0.0.20
+
+# Uvicorn - ASGI server for FastAPI
+# Why: Runs our FastAPI application
+# What we use: Server to host our API during demo
+uvicorn==0.34.0
+
+# WebSockets - WebSocket protocol implementation
+# Why: Real-time bidirectional communication
+# What we use: Show live agent reasoning to judges in demo
+#              User sees: "Crisis Agent is evaluating..."
+websockets==14.1
+
+# Streamlit - Quick web UI builder
+# Why: **PERFECT FOR HACKATHON DEMOS**
+# What we use:
+#   - Build demo UI in minutes, not hours
+#   - Show agent reasoning panel
+#   - Split screen: User chat | Agent thoughts
+#   - Interactive controls for privacy tiers
+streamlit==1.41.1
+
+# ----------------------------------------------------------------
+# 💾 DATABASE & STATE MANAGEMENT
+# ----------------------------------------------------------------
+
+# Supabase - PostgreSQL + Auth + Real-time
+# Why: Store user data based on privacy tiers:
+#      - "Your Private Notes": User-encrypted storage
+#      - "Full Support": Platform can analyze patterns
+# What we use:
+#   - User profiles
+#   - Habit tracking history
+#   - Therapist directory
+#   - Session state persistence
+# Note: OPTIONAL for hackathon - can use in-memory storage
+supabase==2.10.0
+
+# Redis - In-memory data store
+# Why: **CRITICAL FOR MULTI-AGENT STATE**
+# What we use:
+#   - Store conversation state between agent steps
+#   - Cache therapist searches
+#   - Rate limiting
+#   - Session management
+# Example: Crisis Agent detects risk → stores context →
+#          Resource Agent retrieves context → acts on it
+# Note: OPTIONAL for hackathon - LangGraph has in-memory state
+redis==5.2.1
+
+# AsyncPG - PostgreSQL async driver
+# Why: Non-blocking database queries (don't freeze agents)
+# What we use: Async database operations for Supabase
+asyncpg==0.30.0
+
+# ----------------------------------------------------------------
+# 🛠️ UTILITIES
+# ----------------------------------------------------------------
+
+# Python-dotenv - Load environment variables from .env
+# Why: Read your API keys from .env file securely
+# What we use: Load OPENROUTER_API_KEY, TAVILY_API_KEY
+python-dotenv==1.0.1
+
+# Pydantic - Data validation using Python type hints
+# Why: **ESSENTIAL FOR AGENT STATE MANAGEMENT**
+# What we use:
+#   - Define state schemas (what data agents pass around)
+#   - Validate LLM outputs (ensure correct format)
+#   - Type safety for our entire system
+# Example:
+#   class HabitState(BaseModel):
+#       user_id: str
+#       habit_name: str
+#       completed: bool
+pydantic==2.10.4
+
+# Pydantic Settings - Settings management
+# Why: Load configuration from .env with validation
+# What we use: Validate all config on startup
+pydantic-settings==2.7.0
+
+# Email Validator - Validates email addresses
+# Why: Required by Pydantic's EmailStr type
+# What we use: Therapist email validation in models
+email-validator==2.2.0
+
+# ----------------------------------------------------------------
+# 🧪 TESTING (Important for hackathon reliability!)
+# ----------------------------------------------------------------
+
+# Pytest - Testing framework
+# Why: Make sure agents work before demo!
+# What we use: Unit tests for each agent
+pytest==8.3.4
+
+# Pytest-asyncio - Async test support
+# Why: Our agents are async (non-blocking)
+# What we use: Test async agent functions
+pytest-asyncio==0.24.0
+
+# HTTPX - Async HTTP client
+# Why: Make HTTP requests in tests
+# What we use: Test API endpoints, mock LLM responses
+# Note: Using 0.27.2 instead of 0.28.1 to avoid conflict with supabase
+httpx==0.27.2
+
+# ----------------------------------------------------------------
+# 🎙️ VOICE & AUDIO
+# ----------------------------------------------------------------
+
+# ElevenLabs - Text-to-speech API
+# Why: Convert agent responses to natural speech
+# What we use: Voice synthesis for demo
+# Note: OPTIONAL - app works without it
+elevenlabs==1.59.0
+
+# ----------------------------------------------------------------
+# 📊 MONITORING & LOGGING
+# ----------------------------------------------------------------
+
+# Loguru - Beautiful logging library
+# Why: **SHOW AGENT REASONING TO JUDGES**
+# What we use:
+#   - Log every agent decision
+#   - Show thought process in demo
+#   - Debug issues quickly
+# Example output:
+#   [CRISIS AGENT] Thought: User mentioned feeling hopeless
+#   [CRISIS AGENT] Action: assess_suicide_risk
+#   [CRISIS AGENT] Observation: Low risk detected
+#   [CRISIS AGENT] Decision: Escalate to Resource Agent
+loguru==0.7.3
+
+# ----------------------------------------------------------------
+# 📝 NOTES ON VERSIONS
+# ----------------------------------------------------------------
+# These versions are pinned (exact versions specified) because:
+# - Ensures reproducibility (works same on all machines)
+# - Prevents breaking changes during hackathon
+# - Judges can run your exact environment
+#
+# After hackathon, you might use version ranges like:
+# langchain>=0.3.0,<0.4.0
+# But for hackathon: EXACT versions = fewer surprises!
+# ----------------------------------------------------------------

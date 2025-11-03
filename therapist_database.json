@@ -1,0 +1,406 @@
+[
+  {
+    "id": "therapist_001",
+    "name": "Dr. Sarah Johnson",
+    "email": "sarah.johnson@mindbridge.org",
+    "phone": "+1-555-0101",
+    "specializations": [
+      "anxiety",
+      "depression",
+      "trauma"
+    ],
+    "license_number": "PSY-12345-NY",
+    "years_experience": 12,
+    "time_slots": [
+      {
+        "day_of_week": "Monday",
+        "start_time": "09:00",
+        "end_time": "17:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      },
+      {
+        "day_of_week": "Wednesday",
+        "start_time": "09:00",
+        "end_time": "17:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      },
+      {
+        "day_of_week": "Friday",
+        "start_time": "13:00",
+        "end_time": "18:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      }
+    ],
+    "is_volunteer": true,
+    "status": "active",
+    "max_patients": 12,
+    "current_patients": 3,
+    "bio": "Licensed clinical psychologist with 12 years of experience specializing in trauma-informed care and evidence-based treatments for anxiety and depression.",
+    "joined_date": "2025-10-27 23:08:59.560273",
+    "last_active": "2025-10-27 23:08:59.560277"
+  },
+  {
+    "id": "therapist_002",
+    "name": "Dr. Michael Chen",
+    "email": "michael.chen@mindbridge.org",
+    "phone": "+1-555-0102",
+    "specializations": [
+      "addiction",
+      "relationships",
+      "general"
+    ],
+    "license_number": "LMFT-67890-CA",
+    "years_experience": 8,
+    "time_slots": [
+      {
+        "day_of_week": "Tuesday",
+        "start_time": "10:00",
+        "end_time": "18:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      },
+      {
+        "day_of_week": "Thursday",
+        "start_time": "10:00",
+        "end_time": "18:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      }
+    ],
+    "is_volunteer": true,
+    "status": "active",
+    "max_patients": 10,
+    "current_patients": 7,
+    "bio": "Marriage and family therapist focusing on addiction recovery and relationship counseling using cognitive-behavioral approaches.",
+    "joined_date": "2025-10-27 23:08:59.560333",
+    "last_active": "2025-10-27 23:08:59.560334"
+  },
+  {
+    "id": "therapist_003",
+    "name": "Dr. Emily Rodriguez",
+    "email": "emily.rodriguez@mindbridge.org",
+    "phone": "+1-555-0103",
+    "specializations": [
+      "eating_disorders",
+      "anxiety",
+      "depression"
+    ],
+    "license_number": "PSY-34567-TX",
+    "years_experience": 15,
+    "time_slots": [
+      {
+        "day_of_week": "Monday",
+        "start_time": "08:00",
+        "end_time": "12:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      },
+      {
+        "day_of_week": "Wednesday",
+        "start_time": "14:00",
+        "end_time": "19:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      },
+      {
+        "day_of_week": "Saturday",
+        "start_time": "09:00",
+        "end_time": "13:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      }
+    ],
+    "is_volunteer": true,
+    "status": "active",
+    "max_patients": 15,
+    "current_patients": 10,
+    "bio": "Specialized in eating disorders with extensive experience in body image issues, anxiety, and depression. Uses dialectical behavior therapy (DBT) and acceptance-based approaches.",
+    "joined_date": "2025-10-27 23:08:59.560374",
+    "last_active": "2025-10-27 23:08:59.560374"
+  },
+  {
+    "id": "therapist_004",
+    "name": "Dr. James Williams",
+    "email": "james.williams@mindbridge.org",
+    "phone": "+1-555-0104",
+    "specializations": [
+      "ptsd",
+      "trauma",
+      "grief"
+    ],
+    "license_number": "LCSW-45678-IL",
+    "years_experience": 20,
+    "time_slots": [
+      {
+        "day_of_week": "Tuesday",
+        "start_time": "09:00",
+        "end_time": "15:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      },
+      {
+        "day_of_week": "Thursday",
+        "start_time": "09:00",
+        "end_time": "15:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      }
+    ],
+    "is_volunteer": true,
+    "status": "active",
+    "max_patients": 8,
+    "current_patients": 8,
+    "bio": "Veteran affairs specialist with 20 years treating PTSD and trauma. Certified in EMDR therapy and prolonged exposure therapy.",
+    "joined_date": "2025-10-27 23:08:59.560416",
+    "last_active": "2025-10-27 23:08:59.560417"
+  },
+  {
+    "id": "therapist_005",
+    "name": "Dr. Lisa Thompson",
+    "email": "lisa.thompson@mindbridge.org",
+    "phone": "+1-555-0105",
+    "specializations": [
+      "anxiety",
+      "ocd",
+      "general"
+    ],
+    "license_number": "PSY-56789-FL",
+    "years_experience": 10,
+    "time_slots": [
+      {
+        "day_of_week": "Monday",
+        "start_time": "13:00",
+        "end_time": "20:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      },
+      {
+        "day_of_week": "Friday",
+        "start_time": "09:00",
+        "end_time": "16:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      }
+    ],
+    "is_volunteer": true,
+    "status": "active",
+    "max_patients": 12,
+    "current_patients": 5,
+    "bio": "Specialist in anxiety disorders and OCD using exposure and response prevention (ERP) therapy. Passionate about making mental health care accessible.",
+    "joined_date": "2025-10-27 23:08:59.560451",
+    "last_active": "2025-10-27 23:08:59.560452"
+  },
+  {
+    "id": "therapist_006",
+    "name": "Dr. David Martinez",
+    "email": "david.martinez@mindbridge.org",
+    "phone": "+1-555-0106",
+    "specializations": [
+      "depression",
+      "grief",
+      "general"
+    ],
+    "license_number": "LMHC-67891-MA",
+    "years_experience": 6,
+    "time_slots": [
+      {
+        "day_of_week": "Wednesday",
+        "start_time": "10:00",
+        "end_time": "18:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      },
+      {
+        "day_of_week": "Saturday",
+        "start_time": "10:00",
+        "end_time": "14:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      }
+    ],
+    "is_volunteer": true,
+    "status": "active",
+    "max_patients": 10,
+    "current_patients": 4,
+    "bio": "Mental health counselor specializing in depression and grief counseling. Uses person-centered and existential therapy approaches.",
+    "joined_date": "2025-10-27 23:08:59.560485",
+    "last_active": "2025-10-27 23:08:59.560485"
+  },
+  {
+    "id": "therapist_007",
+    "name": "Dr. Amanda Foster",
+    "email": "amanda.foster@mindbridge.org",
+    "phone": "+1-555-0107",
+    "specializations": [
+      "relationships",
+      "anxiety",
+      "general"
+    ],
+    "license_number": "LMFT-78912-WA",
+    "years_experience": 9,
+    "time_slots": [
+      {
+        "day_of_week": "Tuesday",
+        "start_time": "14:00",
+        "end_time": "21:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      },
+      {
+        "day_of_week": "Thursday",
+        "start_time": "14:00",
+        "end_time": "21:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      }
+    ],
+    "is_volunteer": true,
+    "status": "active",
+    "max_patients": 10,
+    "current_patients": 6,
+    "bio": "Couples and individual therapist focusing on communication, attachment, and relationship dynamics. Gottman Method certified.",
+    "joined_date": "2025-10-27 23:08:59.560518",
+    "last_active": "2025-10-27 23:08:59.560518"
+  },
+  {
+    "id": "therapist_008",
+    "name": "Dr. Robert Kim",
+    "email": "robert.kim@mindbridge.org",
+    "phone": "+1-555-0108",
+    "specializations": [
+      "addiction",
+      "depression",
+      "trauma"
+    ],
+    "license_number": "LCSW-89123-OR",
+    "years_experience": 14,
+    "time_slots": [
+      {
+        "day_of_week": "Monday",
+        "start_time": "11:00",
+        "end_time": "19:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      },
+      {
+        "day_of_week": "Wednesday",
+        "start_time": "11:00",
+        "end_time": "19:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      }
+    ],
+    "is_volunteer": true,
+    "status": "offline",
+    "max_patients": 12,
+    "current_patients": 0,
+    "bio": "Addiction counselor with dual specialization in trauma and depression. 14 years helping individuals achieve lasting recovery.",
+    "joined_date": "2025-10-27 23:08:59.560551",
+    "last_active": "2025-10-27 23:08:59.560551"
+  },
+  {
+    "id": "therapist_009",
+    "name": "Dr. Jennifer Lee",
+    "email": "jennifer.lee@mindbridge.org",
+    "phone": "+1-555-0109",
+    "specializations": [
+      "anxiety",
+      "depression",
+      "general"
+    ],
+    "license_number": "PSY-91234-CO",
+    "years_experience": 7,
+    "time_slots": [
+      {
+        "day_of_week": "Monday",
+        "start_time": "09:00",
+        "end_time": "17:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      },
+      {
+        "day_of_week": "Tuesday",
+        "start_time": "09:00",
+        "end_time": "17:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      },
+      {
+        "day_of_week": "Thursday",
+        "start_time": "09:00",
+        "end_time": "13:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      }
+    ],
+    "is_volunteer": true,
+    "status": "active",
+    "max_patients": 15,
+    "current_patients": 2,
+    "bio": "Clinical psychologist offering evidence-based treatment for anxiety and depression. Specializes in young adults and life transitions.",
+    "joined_date": "2025-10-27 23:08:59.560584",
+    "last_active": "2025-10-27 23:08:59.560584"
+  },
+  {
+    "id": "therapist_010",
+    "name": "Dr. Patricia Brown",
+    "email": "patricia.brown@mindbridge.org",
+    "phone": "+1-555-0110",
+    "specializations": [
+      "grief",
+      "trauma",
+      "depression"
+    ],
+    "license_number": "LMHC-12345-NC",
+    "years_experience": 18,
+    "time_slots": [
+      {
+        "day_of_week": "Wednesday",
+        "start_time": "08:00",
+        "end_time": "16:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      },
+      {
+        "day_of_week": "Friday",
+        "start_time": "08:00",
+        "end_time": "16:00",
+        "timezone": "America/New_York",
+        "is_available": true,
+        "recurring": true
+      }
+    ],
+    "is_volunteer": true,
+    "status": "active",
+    "max_patients": 10,
+    "current_patients": 9,
+    "bio": "Grief counselor and trauma specialist with 18 years of experience helping individuals navigate loss and develop resilience.",
+    "joined_date": "2025-10-27 23:08:59.560616",
+    "last_active": "2025-10-27 23:08:59.560616"
+  }
+]
